@@ -1,0 +1,35 @@
+<div class="secHeader">
+	<h1>State thy name and ye shall pass</h1>
+	<p>Not a member yet? <a ui-sref="registration">Register</a> now — it's fun and easy!</p>
+</div>
+<div class="loginReg clear">
+	<div class="userForm fl">
+		 <div class="loginForm"  ng-controller="LoginController">
+		 	<form name="loginForm" id="loginForm">
+		 		<div class="formControl">
+		 			<input type="text" class="inputControl"  name="userName" ng-model="data.userName" placeholder="Username" validate rel="required:1000">
+		 			<span class="errLbl"></span>
+		 		</div>
+
+		 		<div class="formControl">
+		 			<input type="password" class="inputControl"  name="userPwd" ng-model="data.userPwd" placeholder="Password" validate rel="required:1000" >
+		 			<span class="errLbl"></span>
+		 		</div>
+
+		 		<div class="btn clear">
+		 			<div class="remember fl">
+		 				<input type="checkbox" name="remember" id="remember" /><label for="remember">Remember me</label>
+		 			</div>
+		 			<input type="submit" name="reg" value="Login" class="fr" ng-click="onSubmit($event)" ng-class="{'btn-dis':(!data.userName || !data.userPwd),'btn-active':(data.userName && data.userPwd)}">
+		 		</div>
+		 	</form>
+		 </div>									
+	</div>
+	<div class="verticalSep fl"><span>or</span></div>
+	<div class="social fl">
+		<div class="fb"><a href="javascript:void(0);">Login with Facebook</a></div>
+		<div class="twt"><a href="javascript:void(0);">Login with Twitter</a></div>
+	</div>
+</div>
+
+

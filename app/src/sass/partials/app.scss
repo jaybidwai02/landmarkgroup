@@ -1,0 +1,85 @@
+.row{
+	width: 100%;
+	.container{
+		width: 620px;
+		margin: 0 auto;
+	}
+}
+
+.header{
+	height: 85px;
+	padding: 15px 0;
+}
+
+.form,.video{
+	min-height: 260px;
+	background-color: #FFF; 
+	width: 100%;
+	margin-bottom: 20px;
+	border: 1px solid $secBorder; 
+	.secHeader{
+		padding: 18px 22px;
+		border-bottom: 1px solid $borderCol; 
+		h1,h2{
+			font-size: 18px;
+			text-align: center;
+		}
+		p{
+			font-size: 12px;
+			text-align: center;
+		}
+	}
+
+	.loginReg{
+		padding: 36px 22px;
+		.userForm{
+			width: 350px;
+		}
+		.termAndCon{
+			width: 208px;
+			font-size: 12px;
+			color: $tnc;
+			margin: 20px 0 15px 0;  
+		}
+	}
+}
+.video{
+	.content{
+		padding: 25px 20px;
+		position: relative;
+		.videoImg{
+			width: 100%;
+		}
+		.play{
+			position: absolute;
+			margin: auto;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 0;
+		}
+	}
+	.content:hover{
+			cursor: pointer;
+	}
+}
+.social{
+	padding-left: 44px;
+}
+.btn{
+	.remember{
+		margin-top: 6px;
+		input{
+			width: 12px;
+			height: 12px;
+			margin-top: 1px;
+			float: left;
+		}
+		label{
+			font-size: 12px;
+			line-height: 14px;
+			margin-left: 12px;
+			float: left;
+		}
+	}
+}

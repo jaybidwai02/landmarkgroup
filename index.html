@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="app/src/css/app.css">
+</head>
+<body ng-app="app" ng-controller="AppController" ng-class="{lightBoxOpen:showLightBox}">
+	
+	<div class="row">
+		<div class="container">
+
+			<header>
+				<div class="header">
+					<img src="app/src/images/tango.png" alt="">
+				</div>
+			</header>
+
+			<section>
+
+				<div class="form">
+					 <ui-view></ui-view>
+				</div>
+			</section>
+			<section>
+				<div class="video">
+					<div class="secHeader">
+						<h2>Learn more!</h2>
+						<p>Check out our demos and quick guides to our app.</p>
+					</div>
+					<div class="content">
+						<img src="app/src/images/video.jpg" alt="Video" class="videoImg">
+						<img src="app/src/images/play.png" alt="png" class="play" ng-click="openLightBox($event)"></a>
+					</div>
+				</div>
+			</section>
+
+		</div>
+	</div>
+
+	<div class="lightBox" ng-show="showLightBox">
+		<div class="lightBoxContent">
+			<h2>Loading......</h2>
+			<a href="javascript:void(0);" ng-click="openLightBox($event)" class="close">X</a>
+			<div class="player">
+				<iframe width="580" height="387" cust-src="https://www.youtube.com/embed/XGSy3_Czz8k" frameborder="0" allowfullscreen id="appVideo" src="">
+				</iframe>
+			</div>
+		</div>
+	</div>
+	<div class="lightBoxLayer" ng-class="{show:showLightBox}"></div>
+
+	<script type="text/javascript" src="app/src/js/lib.js"></script>
+	<script type="text/javascript" src="app/src/js/app.js"></script>
+
+
+</body>
+</html>
